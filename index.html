@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Hub</title>
+    <title>TECH HUB</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,70 +14,70 @@
         header {
             background-color: #007bff;
             color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            text-align: center;
             padding: 15px;
-            text-align: center;
-            position: relative;
+            background-color: #343a40;
         }
-        header h1 {
-            margin: 0;
-            font-size: 20px; /* Reduced font size */
-        }
-        .note {
-            position: absolute;
-            top: 8px;
-            right: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
+        .nav a {
             color: white;
-            padding: 3px 10px;
-            border-radius: 8px;
-            font-size: 12px; /* Smaller font size */
-        }
-        p {
-            text-align: center;
-            font-size: 14px; /* Reduced font size */
-        }
-        .brands {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .brand-tag {
-            background-color: #007bff;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px; /* Curved edges */
+            padding: 12px 20px;
             text-decoration: none;
-            font-size: 14px; /* Reduced font size */
-            transition: 0.3s;
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            font-size: 16px;
         }
-        .brand-tag:hover {
-            background-color: #0056b3;
+        .nav a:hover {
+            background-color: #495057;
+        }
+        .hero {
+            background-image: url('your-image-url.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .cta-button {
+            background-color: #28a745;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        .footer {
+            text-align: center;
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Tech Hub</h1>
-        <div class="note">own the best one</div>
+        <h1>TECH HUB</h1>
     </header>
 
-    <p>Explore phones laptops and earbuds by brand.</p>
-    
-    <div class="brands">
-        <a href="#" class="brand-tag">Apple</a>
-        <a href="#" class="brand-tag">Samsung</a>
-        <a href="#" class="brand-tag">Realme</a>
-        <a href="#" class="brand-tag">OnePlus</a>
-        <a href="#" class="brand-tag">Sony</a>
-        <a href="#" class="brand-tag">Asus</a>
-        <a href="#" class="brand-tag">Dell</a>
-        <a href="#" class="brand-tag">HP</a>
-        <a href="#" class="brand-tag">Motorola</a>
-        <a href="#" class="brand-tag">iQOO</a>
-        <a href="#" class="brand-tag">Lenovo</a>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="hero">
+        <h2>Welcome to TECH HUB</h2>
+        <p>Your ultimate destination for tech reviews and gadgets</p>
+        <button class="cta-button">Explore Now</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 TECH HUB | All Rights Reserved</p>
     </div>
 </body>
 </html>
