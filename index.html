@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: blue; }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Tech Website</title>
+    <title>Tech Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0;
+            padding: 0;
             background-color: #f8f9fa;
         }
-        h1 {
-            color: darkblue;
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .note {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 14px;
         }
         .brands {
             display: flex;
@@ -52,8 +54,12 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to My Tech Website</h1>
-    <p>Explore phones, laptops, and earbuds by brand.</p>
+    <header>
+        <h1>Anandhakrishnan's Tech Hub</h1>
+        <div class="note">A Note on Gadgets</div> <!-- Note on gadgets -->
+    </header>
+
+    <p style="text-align:center;">Explore phones, laptops, and earbuds by brand.</p>
     
     <div class="brands">
         <a href="#" class="brand-tag">Apple</a>
@@ -64,9 +70,9 @@
         <a href="#" class="brand-tag">Asus</a>
         <a href="#" class="brand-tag">Dell</a>
         <a href="#" class="brand-tag">HP</a>
-        <a href="#" class="brand-tag">Motorola</a> <!-- New brand -->
-        <a href="#" class="brand-tag">iQOO</a> <!-- New brand -->
-        <a href="#" class="brand-tag">Lenovo</a> <!-- New brand -->
+        <a href="#" class="brand-tag">Motorola</a>
+        <a href="#" class="brand-tag">iQOO</a>
+        <a href="#" class="brand-tag">Lenovo</a>
     </div>
 </body>
 </html>
