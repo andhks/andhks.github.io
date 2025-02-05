@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacker's Hub</title>
+    <title>Hacking Tutorials</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <style>
-        /* General Styling */
+        /* Global Styles */
         body {
             font-family: 'Exo', sans-serif;
             margin: 0;
@@ -15,175 +15,104 @@
             color: white;
         }
 
-        /* Header Section */
-        header {
-            background-color: #000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-        }
-
-        /* Sticky Navigation Bar */
-        .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #1a1a1a;
+        /* Navigation Bar */
+        .navbar {
+            background-color: #1f1f1f;
+            padding: 15px;
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 15px 0;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
             z-index: 1000;
         }
-        .nav a {
+
+        .navbar a {
             color: white;
-            padding: 12px 20px;
             text-decoration: none;
+            margin: 0 15px;
             font-size: 16px;
-            white-space: nowrap;
-        }
-        .nav a:hover {
-            background-color: #333;
         }
 
-        /* Ensures body content doesn't overlap with fixed navbar */
-        body {
-            padding-top: 60px;
+        .navbar a:hover {
+            color: #00ff99;
         }
 
-        /* Search Bar */
-        .search-bar {
-            text-align: center;
-            margin: 20px;
-        }
-        .search-bar input {
-            padding: 10px;
-            width: 50%;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        /* Categories Section */
-        .category-section {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .category {
-            display: inline-block;
-            background-color: #333;
-            padding: 15px 30px;
-            margin: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            color: white;
-        }
-        .category:hover {
-            background-color: #28a745;
-        }
-
-        /* Tutorials Section */
-        .tutorials {
-            max-width: 900px;
-            margin: auto;
+        /* Tutorials List */
+        .tutorial-container {
+            max-width: 800px;
+            margin: 40px auto;
             padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 8px;
         }
-        .tutorial {
-            background-color: #1a1a1a;
+
+        .tutorial-container h1 {
+            color: #00ff99;
+            text-align: center;
+        }
+
+        .tutorial-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tutorial-list li {
+            background-color: #252525;
+            margin: 10px 0;
             padding: 15px;
-            margin-bottom: 15px;
             border-radius: 5px;
         }
-        .tutorial a {
-            color: #28a745;
+
+        .tutorial-list a {
             text-decoration: none;
+            color: #00ff99;
             font-size: 18px;
         }
-        .tutorial a:hover {
+
+        .tutorial-list a:hover {
             text-decoration: underline;
         }
 
         /* Footer */
         .footer {
             text-align: center;
-            background-color: #000;
+            background-color: #1f1f1f;
             color: white;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        /* Responsive Design for Mobile */
-        @media screen and (max-width: 768px) {
-            .nav {
-                flex-direction: column;
-                gap: 10px;
-                align-items: center;
-            }
-            .nav a {
-                display: block;
-                padding: 10px;
-                width: 100%;
-                text-align: center;
-            }
-            .search-bar input {
-                width: 80%;
-            }
-            .category {
-                display: block;
-                width: 80%;
-                text-align: center;
-                margin: 10px auto;
-            }
+            padding: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Hacker's Hub</h1>
-        <p>Your Ultimate Ethical Hacking Learning Platform</p>
-    </header>
-
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Tutorials</a>
-        <a href="#">About</a>
-        <a href="#">Tools</a>
-    </div>
-
-    <div class="search-bar">
-        <input type="text" placeholder="Search hacking tutorials...">
-    </div>
-
-    <div class="category-section">
-        <a href="#" class="category">Beginner's Guide</a>
-        <a href="#" class="category">Networking & Security</a>
-        <a href="#" class="category">Termux & NetHunter</a>
-        <a href="#" class="category">Hacking Tools</a>
-        <a href="#" class="category">Wi-Fi Hacking</a>
-        <a href="#" class="category">Python for Hackers</a>
-    </div>
-
-    <div class="tutorials">
-        <h2>🔥 Latest Tutorials</h2>
-        <div class="tutorial">
-            <a href="#">How to Use Metasploit for Beginners</a>
-        </div>
-        <div class="tutorial">
-            <a href="#">Essential Termux Commands for Hacking</a>
-        </div>
-        <div class="tutorial">
-            <a href="#">Using Nmap to Scan Networks</a>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="tutorials.html">Tutorials</a>
+            <a href="blog.html">Blog</a>
+            <a href="tools.html">Tools</a>
+            <a href="about.html">About</a>
         </div>
     </div>
 
+    <!-- Tutorials List -->
+    <div class="tutorial-container">
+        <h1>Hacking Tutorials</h1>
+        <ul class="tutorial-list">
+            <li><a href="tutorial1.html">Introduction to Ethical Hacking</a></li>
+            <li><a href="tutorial2.html">Setting Up Kali Linux</a></li>
+            <li><a href="tutorial3.html">Basic Linux Commands</a></li>
+            <li><a href="tutorial4.html">Understanding Network Basics</a></li>
+            <li><a href="tutorial5.html">Using Nmap for Scanning</a></li>
+            <li><a href="tutorial6.html">Metasploit Basics</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
     <div class="footer">
-        <p>&copy; 2025 Hacker's Hub | For Educational Purposes Only</p>
+        <p>&copy; 2025 Hacking Tutorials | All Rights Reserved</p>
     </div>
 
 </body>
