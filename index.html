@@ -3,117 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacking Tutorials</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Exo', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: white;
-        }
-
-        /* Navigation Bar */
-        .navbar {
-            background-color: #1f1f1f;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 16px;
-        }
-
-        .navbar a:hover {
-            color: #00ff99;
-        }
-
-        /* Tutorials List */
-        .tutorial-container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #1f1f1f;
-            border-radius: 8px;
-        }
-
-        .tutorial-container h1 {
-            color: #00ff99;
-            text-align: center;
-        }
-
-        .tutorial-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .tutorial-list li {
-            background-color: #252525;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        .tutorial-list a {
-            text-decoration: none;
-            color: #00ff99;
-            font-size: 18px;
-        }
-
-        .tutorial-list a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            background-color: #1f1f1f;
-            color: white;
-            padding: 20px;
-            margin-top: 30px;
-        }
-    </style>
+    <title>Hacking Tutorials - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>HACKING TUTORIALS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tools.html">Tools</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Navigation -->
-    <div class="navbar">
-        <div>
-            <a href="index.html">Home</a>
-            <a href="tutorials.html">Tutorials</a>
-            <a href="blog.html">Blog</a>
-            <a href="tools.html">Tools</a>
-            <a href="about.html">About</a>
-        </div>
-    </div>
+    <section class="hero">
+        <h2>Welcome to the World of Ethical Hacking</h2>
+        <p>Start your journey by learning key concepts, essential tools, and step-by-step techniques to build a strong foundation.  
+        Let's guide you from the basics to advanced skills in ethical hacking.</p>
+        <a href="tutorials.html" class="cta-button">Start Learning</a>
+    </section>
 
-    <!-- Tutorials List -->
-    <div class="tutorial-container">
-        <h1>Hacking Tutorials</h1>
-        <ul class="tutorial-list">
-            <li><a href="tutorial1.html">Introduction to Ethical Hacking</a></li>
-            <li><a href="tutorial2.html">Setting Up Kali Linux</a></li>
-            <li><a href="tutorial3.html">Basic Linux Commands</a></li>
-            <li><a href="tutorial4.html">Understanding Network Basics</a></li>
-            <li><a href="tutorial5.html">Using Nmap for Scanning</a></li>
-            <li><a href="tutorial6.html">Metasploit Basics</a></li>
-        </ul>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p>&copy; 2025 Hacking Tutorials | All Rights Reserved</p>
-    </div>
-
+    <footer>
+        <p>&copy; 2025 Hacking Tutorials | For educational purposes only.</p>
+    </footer>
 </body>
 </html>
