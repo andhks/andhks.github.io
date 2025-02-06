@@ -86,3 +86,12 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add more styling as needed */
