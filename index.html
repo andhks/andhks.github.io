@@ -2,20 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>eFootball Updates</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .news-container { display: flex; flex-wrap: wrap; gap: 20px; }
+    .news-item { width: 300px; border: 1px solid #ddd; padding: 10px; border-radius: 5px; }
+    .news-item img { width: 100%; height: auto; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to eFootball Updates</h1>
+    <h1>eFootball News</h1>
   </header>
-  <section id="latest-news">
+  <section id="news-section">
     <h2>Latest News</h2>
-    <!-- News content will go here -->
+    <div id="news-container" class="news-container"></div>
   </section>
   <footer>
     <p>© 2025 eFootball Updates</p>
   </footer>
-</body>
-</html>
 
+  <script>
+    async function fetchNews() {
+      const apiKey = "YOUR_NEWSAPI_KEY"; // Replace with your NewsAPI key
+      const url = `https://newsapi.org/v2/everything?q=eFootball&language=en&apiKey=${apiKey}`;
+      
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const newsContainer = document.getElementById("news-container");
+
+        let newsHTML = "";
+        data.articles.forEach((article, index) => {
+          if (index < 6) { // Limit to 6 news articles
+            newsHTML += `
+              <div class="news-item">
+                <img src="${article.urlToImage}" alt="News Image">
+                <h3>${article.title}</h3>
+                <p>${article.description}</p>
+                <a href="${article.url}" target="_blank">Read More</a>
+              </div>`;
+          }
+        });
+
+        newsContainer.innerHTML = newsHTML;
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      }
+    }
+
+    fetchNews();
+  </script>
+</body>
+</html>>
