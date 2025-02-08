@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eFootball News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      transition: all 0.3s ease;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+    .toggle-btn {
+      padding: 10px;
+      cursor: pointer;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .news-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .news-item {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .news-item img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>eFootball News</h1>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+  </header>
 
+  <section id="news-section">
+    <h2>Latest News</h2>
+    <div id="news-container" class="news-container"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 eFootball Updates</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
