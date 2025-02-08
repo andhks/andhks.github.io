@@ -1,5 +1,5 @@
 async function fetchNews() {
-    const apiKey = "YOUR_NEWSAPI_KEY"; // Replace with your API key
+    const apiKey = "dd847275bbf04baca4c9fce79dfa492b"; // Replace with your API key
     const url = `https://newsapi.org/v2/everything?q=eFootball&language=en&apiKey=${apiKey}`;
 
     try {
